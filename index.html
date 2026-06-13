@@ -4,44 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glow Saunas | Luxury Custom Builds</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        :root { --gold: #c9a15c; --dark: #111; }
-        body { font-family: 'Montserrat', sans-serif; background: var(--dark); color: white; margin: 0; line-height: 1.6; }
-        
+        :root { --gold: #c9a15c; --dark: #111; --dark-s: #1a1a1a; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Montserrat', sans-serif; background: var(--dark); color: white; line-height: 1.6; }
+
         /* Header */
-        header { padding: 30px 20px; text-align: center; background: #000; }
-        .logo-img { height: 60px; width: auto; margin-bottom: 10px; }
+        header { padding: 20px 6%; display: flex; justify-content: space-between; align-items: center; background: #000; position: sticky; top: 0; z-index: 1000; }
+        .logo-img { height: 60px; width: auto; }
+        .nav-links a { color: white; text-decoration: none; margin-left: 20px; font-weight: 600; font-size: 0.9rem; }
+        .nav-links a:hover { color: var(--gold); }
+
+        /* Hero */
+        .hero { padding: 100px 6%; text-align: center; background: #050505; }
+        .hero h1 { font-family: 'Playfair Display'; font-size: 3.5rem; margin-bottom: 20px; }
         
+        /* Features */
+        .features { padding: 80px 6%; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .feature-card { background: var(--dark-s); padding: 40px; border-radius: 15px; border: 1px solid #333; }
+        .feature-card h3 { color: var(--gold); margin-bottom: 10px; }
+
         /* Gallery */
-        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 40px 20px; max-width: 1200px; margin: auto; }
-        .gallery img { 
-            width: 100%; 
-            height: 300px; 
-            object-fit: cover; 
-            border-radius: 15px; 
-            border: 1px solid #333; 
-        }
-        
-        /* Contact/Footer */
-        footer { padding: 40px; text-align: center; color: #777; font-size: 0.9rem; }
+        .gallery { padding: 80px 6%; max-width: 1200px; margin: auto; }
+        .section-title { text-align: center; font-family: 'Playfair Display'; font-size: 2.5rem; margin-bottom: 40px; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .gallery-grid img { width: 100%; height: 300px; object-fit: cover; border-radius: 10px; border: 1px solid #333; }
+
+        footer { padding: 40px; text-align: center; color: #666; font-size: 0.9rem; }
     </style>
 </head>
 <body>
 
 <header>
     <img src="https://i.ibb.co/RGbcnTC8/logo-name.png" alt="Glow Saunas" class="logo-img">
-    <h1>Elevated Sauna Experiences</h1>
+    <nav class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
-<section class="gallery">
-    <img src="custom-sauna-build-toronto.jpg" alt="Custom Sauna Build in Toronto">
-    <img src="luxury-sauna-installation-gta.jpg" alt="Luxury Sauna Installation in GTA">
-    <img src="csa-standard-sauna-design.jpg" alt="CSA Standard Sauna Design">
+<section class="hero">
+    <h1>Elevated Sauna Experiences</h1>
+    <p>Canadian craftsmanship. Engineered for health, longevity, and pure aesthetic wonder.</p>
 </section>
 
-<footer>
-    © 2026 Glow Saunas. ECRA/ESA Licence #7010787 | Toronto & GTA
+<section id="features" class="features">
+    <div class="feature-card">
+        <h3>Custom Design</h3>
+        <p>Bespoke builds tailored to your space, integrating cold plunges and advanced health tech.</p>
+    </div>
+    <div class="feature-card">
+        <h3>CSA Standards</h3>
+        <p>Professional electrical and structural integrity meeting the highest Ontario safety codes.</p>
+    </div>
+    <div class="feature-card">
+        <h3>Artistic Detail</h3>
+        <p>Hand-crafted paneling, LED depth-lighting, and luxury finishings for a true sanctuary.</p>
+    </div>
+</section>
+
+<section id="gallery" class="gallery">
+    <h2 class="section-title">Our Recent Projects</h2>
+    <div class="gallery-grid">
+        <img src="custom-sauna-build-toronto.jpg" alt="Sauna Project 1">
+        <img src="luxury-sauna-installation-gta.jpg" alt="Sauna Project 2">
+        <img src="csa-standard-sauna-design.jpg" alt="Sauna Project 3">
+    </div>
+</section>
+
+<footer id="contact">
+    <p>© 2026 Glow Saunas. ECRA/ESA Licence #7010787 | Toronto & GTA</p>
 </footer>
 
 </body>
