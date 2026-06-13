@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glow Saunas | Luxury Custom Builds</title>
+    <title>Glow Saunas | Custom Sauna & Cold Plunge Builds</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -12,79 +12,67 @@
         html { scroll-behavior: smooth; }
         body { font-family: 'Montserrat', sans-serif; background: var(--dark); color: white; line-height: 1.6; }
 
-        /* Header */
-        header { 
-            display: flex; justify-content: space-between; align-items: center; 
-            padding: 15px 6%; background: #000; border-bottom: 1px solid #333;
-            position: sticky; top: 0; z-index: 1000;
-        }
-        .logo-container img { height: 70px; width: auto; }
-        .nav-links { display: flex; align-items: center; gap: 30px; }
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 6%; background: #000; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid #333; }
+        .logo-container img { height: 60px; }
+        .nav-links { display: flex; align-items: center; gap: 25px; }
         .nav-links a { color: white; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: 0.3s; }
-        .nav-links a:hover { color: var(--gold); }
-        .btn-quote { border: 1px solid var(--gold); padding: 10px 20px; border-radius: 5px; color: var(--gold) !important; }
-        .btn-quote:hover { background: var(--gold); color: black !important; }
+        .btn-main { border: 1px solid var(--gold); padding: 10px 20px; border-radius: 5px; color: var(--gold) !important; text-transform: uppercase; letter-spacing: 1px; }
+        .btn-main:hover { background: var(--gold); color: black !important; }
 
-        /* Sections */
-        .hero { padding: 80px 6%; text-align: center; }
-        .hero h1 { font-family: 'Playfair Display'; font-size: 3rem; margin-bottom: 15px; }
-        .features { padding: 60px 6%; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-        .card { background: #1a1a1a; padding: 30px; border-radius: 10px; border: 1px solid #333; }
-        .section-title { font-family: 'Playfair Display'; margin-bottom: 40px; text-align: center; }
+        .hero { padding: 100px 6%; text-align: center; }
+        .hero h1 { font-family: 'Playfair Display'; font-size: 3.5rem; margin-bottom: 20px; }
+        .hero p { font-size: 1.2rem; margin-bottom: 30px; opacity: 0.9; }
+
+        .features { padding: 60px 6%; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .card { background: #1a1a1a; padding: 40px; border-radius: 10px; border: 1px solid #333; }
+        
         .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 0 6%; }
-        .gallery-grid img { width: 100%; height: 300px; object-fit: cover; border-radius: 8px; }
-        footer { padding: 60px 6%; text-align: center; border-top: 1px solid #333; }
+        .gallery-grid img { width: 100%; height: 350px; object-fit: cover; border-radius: 8px; }
+
+        footer { padding: 80px 6%; text-align: center; border-top: 1px solid #333; }
+        .contact-cta { margin-top: 30px; }
     </style>
 </head>
 <body>
 
 <header>
-    <div class="logo-container">
-        <img src="https://i.ibb.co/RGbcnTC8/logo-name.png" alt="Glow Saunas">
-    </div>
+    <div class="logo-container"><img src="https://i.ibb.co/RGbcnTC8/logo-name.png" alt="Glow Saunas"></div>
     <nav class="nav-links">
         <a href="#features">Features</a>
         <a href="#gallery">Gallery</a>
-        <a href="#contact" class="btn-quote">Get a Quote</a>
+        <a href="#contact" class="btn-main">Get a Quote</a>
     </nav>
 </header>
 
 <section class="hero">
     <h1>Elevated Sauna Experiences</h1>
     <p>Canadian craftsmanship. Engineered for health, longevity, and pure aesthetic wonder.</p>
+    <a href="#contact" class="btn-main" style="padding: 15px 40px; font-size: 1.1rem;">Start Your Project</a>
 </section>
 
 <section id="features" class="features">
-    <div class="card">
-        <h3>Custom Design</h3>
-        <p>Bespoke builds tailored to your space, integrating cold plunges and advanced tech.</p>
-    </div>
-    <div class="card">
-        <h3>CSA Standards</h3>
-        <p>Professional electrical and structural integrity meeting Ontario safety codes.</p>
-    </div>
-    <div class="card">
-        <h3>Artistic Detail</h3>
-        <p>Hand-crafted paneling, LED lighting, and luxury finishings for a true sanctuary.</p>
-    </div>
+    <div class="card"><h3>Custom Design</h3><p>Bespoke builds tailored to your space, integrating cold plunges and advanced health tech.</p></div>
+    <div class="card"><h3>CSA Standards</h3><p>Professional electrical and structural integrity meeting the highest Ontario safety codes.</p></div>
+    <div class="card"><h3>Artistic Detail</h3><p>Hand-crafted paneling, LED depth-lighting, and luxury finishings for a true sanctuary.</p></div>
 </section>
 
-<section id="gallery" style="padding-bottom: 60px;">
-    <h2 class="section-title">Recent Projects</h2>
+<section id="gallery" style="padding-bottom: 80px;">
+    <h2 style="text-align: center; font-family: 'Playfair Display'; margin-bottom: 40px; font-size: 2rem;">Recent Projects</h2>
     <div class="gallery-grid">
-        <img src="custom-sauna-build-toronto.png" alt="Custom Sauna">
-        <img src="luxury-sauna-installation-gta.png" alt="Luxury Sauna">
-        <img src="csa-standard-sauna-design.png" alt="CSA Standard">
+        <img src="custom-sauna-build-toronto.png" alt="Sauna 1">
+        <img src="luxury-sauna-installation-gta.png" alt="Sauna 2">
+        <img src="csa-standard-sauna-design.png" alt="Sauna 3">
     </div>
 </section>
 
 <footer id="contact">
-    <h2 class="section-title">Contact Us</h2>
-    <p>Ready to build your sanctuary? Let's discuss your project.</p>
-    <div style="margin: 20px 0;">
-        <a href="https://www.instagram.com/glowsaunas.ca/" target="_blank" style="color: var(--gold); font-size: 30px; text-decoration: none;">
-            <i class="fab fa-instagram"></i>
-        </a>
+    <h2 style="font-family: 'Playfair Display'; font-size: 2.5rem; margin-bottom: 20px;">Ready to build your sanctuary?</h2>
+    <p>Contact us today for a consultation and a custom quote.</p>
+    <div class="contact-cta">
+        <a href="#contact" class="btn-main" style="padding: 15px 40px; display: inline-block;">Request Your Quote</a>
+    </div>
+    <div style="margin-top: 40px;">
+        <a href="https://www.instagram.com/glowsaunas.ca/" target="_blank" style="color: var(--gold); font-size: 30px;"><i class="fab fa-instagram"></i></a>
     </div>
     <p style="margin-top: 20px; color: #666;">ECRA/ESA Licence #7010787 | Toronto & GTA</p>
 </footer>
