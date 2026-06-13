@@ -11,10 +11,14 @@
         body { font-family: 'Montserrat', sans-serif; background: var(--dark); color: white; line-height: 1.6; }
 
         /* Header */
-        header { padding: 20px 6%; display: flex; justify-content: space-between; align-items: center; background: #000; position: sticky; top: 0; z-index: 1000; }
-        .logo-img { height: 60px; width: auto; }
-        .nav-links a { color: white; text-decoration: none; margin-left: 20px; font-weight: 600; font-size: 0.9rem; }
-        .nav-links a:hover { color: var(--gold); }
+        <header style="background: rgba(0, 0, 0, 0.95); padding: 20px 6%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid #333;">
+    <img src="https://i.ibb.co/RGbcnTC8/logo-name.png" alt="Glow Saunas" style="height: 50px; width: auto;">
+    <nav class="nav-links">
+        <a href="#features" style="color: white; text-decoration: none; margin-right: 25px; font-weight: 600; font-size: 0.9rem; transition: 0.3s;">Features</a>
+        <a href="#gallery" style="color: white; text-decoration: none; margin-right: 25px; font-weight: 600; font-size: 0.9rem; transition: 0.3s;">Gallery</a>
+        <a href="#contact" style="border: 1px solid #c9a15c; padding: 10px 20px; border-radius: 5px; color: #c9a15c; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: 0.3s;">Get a Quote</a>
+    </nav>
+</header>
 
         /* Hero */
         .hero { padding: 100px 6%; text-align: center; background: #050505; }
