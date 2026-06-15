@@ -3,35 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glow Saunas | Luxury Custom Builds</title>
+    <title>Glow Saunas | Precision Engineering & Custom Builds</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        :root { --gold: #c9a15c; --dark: #111; }
+        :root { --gold: #c9a15c; --dark: #111; --gray: #f4f4f4; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html { scroll-behavior: smooth; }
         body { font-family: 'Montserrat', sans-serif; background: var(--dark); color: white; line-height: 1.6; }
 
         header { display: flex; justify-content: space-between; align-items: center; padding: 20px 6%; background: #000; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid #333; }
-        .logo-container img { height: 60px; }
-        .nav-links { display: flex; align-items: center; gap: 25px; }
-        .nav-links a { color: white; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: 0.3s; cursor: pointer; }
-        .btn-main { border: 1px solid var(--gold); padding: 10px 20px; border-radius: 5px; color: var(--gold) !important; text-transform: uppercase; letter-spacing: 1px; cursor: pointer; display: inline-block; text-decoration: none; }
+        .logo-container img { height: 50px; }
+        .nav-links { display: flex; align-items: center; gap: 20px; }
+        .nav-links a { color: white; text-decoration: none; font-weight: 600; font-size: 0.8rem; transition: 0.3s; cursor: pointer; text-transform: uppercase; }
+        .btn-main { border: 1px solid var(--gold); padding: 10px 20px; border-radius: 5px; color: var(--gold) !important; text-transform: uppercase; letter-spacing: 1px; cursor: pointer; display: inline-block; text-decoration: none; font-weight: 600; }
         .btn-main:hover { background: var(--gold); color: black !important; }
 
-        .hero { padding: 100px 6%; text-align: center; }
-        .hero h1 { font-family: 'Playfair Display'; font-size: 3.5rem; margin-bottom: 20px; }
-        .hero p { font-size: 1.2rem; margin-bottom: 30px; opacity: 0.9; }
+        .hero { padding: 80px 6%; text-align: center; }
+        .hero h1 { font-family: 'Playfair Display'; font-size: 3rem; margin-bottom: 20px; }
+        .hero p { font-size: 1.1rem; margin-bottom: 30px; opacity: 0.9; max-width: 700px; margin-left: auto; margin-right: auto; }
 
-        .features { padding: 60px 6%; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .card { background: #1a1a1a; padding: 40px; border-radius: 10px; border: 1px solid #333; }
+        .section-title { text-align: center; font-family: 'Playfair Display'; margin-bottom: 40px; font-size: 2rem; }
+        .features, .process-grid { padding: 60px 6%; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .card { background: #1a1a1a; padding: 30px; border-radius: 10px; border: 1px solid #333; }
         
         .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 0 6%; }
         .gallery-grid img { width: 100%; height: 350px; object-fit: cover; border-radius: 8px; }
 
-        footer { padding: 80px 6%; text-align: center; border-top: 1px solid #333; }
-        
-        /* Modal Styles */
+        .process-step { text-align: center; padding: 20px; }
+        .process-step span { display: block; font-size: 2rem; color: var(--gold); margin-bottom: 10px; font-weight: bold; }
+
+        footer { padding: 60px 6%; text-align: center; border-top: 1px solid #333; background: #050505; }
         .modal { display: none; position: fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:9999; justify-content:center; align-items:center; }
         .modal-content { background:#1a1a1a; padding:40px; border-radius:10px; border:1px solid var(--gold); text-align:center; width:90%; max-width:400px; position:relative; }
     </style>
@@ -41,26 +43,30 @@
 <header>
     <div class="logo-container"><img src="https://i.ibb.co/RGbcnTC8/logo-name.png" alt="Glow Saunas"></div>
     <nav class="nav-links">
-        <a href="#features">Features</a>
+        <a href="#process">Process</a>
         <a href="#gallery">Gallery</a>
-        <a onclick="document.getElementById('contact-modal').style.display='flex'" class="btn-main">Get a Quote</a>
+        <a onclick="document.getElementById('contact-modal').style.display='flex'" class="btn-main">Get Free Estimate</a>
     </nav>
 </header>
 
 <section class="hero">
-    <h1>Elevated Sauna Experiences</h1>
-    <p>Canadian craftsmanship. Engineered for health, longevity, and pure aesthetic wonder.</p>
-    <a onclick="document.getElementById('contact-modal').style.display='flex'" class="btn-main" style="padding: 15px 40px; font-size: 1.1rem;">Start Your Project</a>
+    <h1>The Engineering Standard</h1>
+    <p>Beyond aesthetics. Every build is planned with precision electrical load calculations, CSA-compliant safety, and a project-managed timeline. No delays, no guesswork.</p>
+    <a onclick="document.getElementById('contact-modal').style.display='flex'" class="btn-main" style="padding: 15px 40px; font-size: 1.1rem;">Start Your Consultation</a>
 </section>
 
-<section id="features" class="features">
-    <div class="card"><h3>Custom Design</h3><p>Bespoke builds tailored to your space, integrating cold plunges and advanced health tech.</p></div>
-    <div class="card"><h3>CSA Standards</h3><p>Professional electrical and structural integrity meeting the highest Ontario safety codes.</p></div>
-    <div class="card"><h3>Artistic Detail</h3><p>Hand-crafted paneling, LED depth-lighting, and luxury finishings for a true sanctuary.</p></div>
+<section id="process" style="padding: 60px 6%; background: #0a0a0a;">
+    <h2 class="section-title">The 4-Step Precision Build</h2>
+    <div class="process-grid">
+        <div class="process-step"><span>01</span><h3>Consultation</h3><p>We assess your space and technical requirements.</p></div>
+        <div class="process-step"><span>02</span><h3>Engineering</h3><p>Load balancing and smart material sourcing.</p></div>
+        <div class="process-step"><span>03</span><h3>Precision Install</h3><p>Craftsmanship meeting ESA/CSA codes.</p></div>
+        <div class="process-step"><span>04</span><h3>Safety Sign-off</h3><p>Final testing for 100% reliability.</p></div>
+    </div>
 </section>
 
-<section id="gallery" style="padding-bottom: 80px;">
-    <h2 style="text-align: center; font-family: 'Playfair Display'; margin-bottom: 40px; font-size: 2rem;">Recent Projects</h2>
+<section id="gallery" style="padding: 60px 6%;">
+    <h2 class="section-title">Recent Projects</h2>
     <div class="gallery-grid">
         <img src="custom-sauna-build-toronto.png" alt="Sauna 1">
         <img src="luxury-sauna-installation-gta.png" alt="Sauna 2">
@@ -68,38 +74,21 @@
     </div>
 </section>
 
-<section id="faq" style="padding: 80px 6%; background: #0a0a0a;">
-    <h2 style="text-align: center; font-family: 'Playfair Display'; margin-bottom: 40px; font-size: 2rem;">Frequently Asked Questions</h2>
-    <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px;">
-        <div class="card">
-            <h3 style="color: var(--gold); margin-bottom: 10px;">How long does the installation take?</h3>
-            <p>Typically, a custom build takes 3–5 days once materials are on-site.</p>
-        </div>
-        <div class="card">
-            <h3 style="color: var(--gold); margin-bottom: 10px;">Are your saunas CSA approved?</h3>
-            <p>Yes. All electrical work meets Ontario safety codes and ESA regulations.</p>
-        </div>
-    </div>
-</section>
-
-<footer id="contact">
+<footer>
     <h2 style="font-family: 'Playfair Display'; font-size: 2.5rem; margin-bottom: 20px;">Ready to build your sanctuary?</h2>
-    <a onclick="document.getElementById('contact-modal').style.display='flex'" class="btn-main" style="padding: 15px 40px;">Request Your Quote</a>
-    <div style="margin-top: 40px;">
-        <a href="https://www.instagram.com/glowsaunas.ca/" target="_blank" style="color: var(--gold); font-size: 30px;"><i class="fab fa-instagram"></i></a>
-    </div>
-    <p style="margin-top: 20px; color: #666;">ECRA/ESA Licence #7010787 | Toronto & GTA</p>
+    <p style="margin-bottom: 30px; opacity: 0.8;">Reliability is our core value. We manage your timeline from start to finish.</p>
+    <a onclick="document.getElementById('contact-modal').style.display='flex'" class="btn-main" style="padding: 15px 40px;">Request Your Free Estimate</a>
+    <p style="margin-top: 40px; font-weight: bold; color: var(--gold);">ECRA/ESA Licence #7010787 | Toronto & GTA</p>
 </footer>
 
 <div id="contact-modal" class="modal">
     <div class="modal-content">
-        <span onclick="document.getElementById('contact-modal').style.display='none'" style="position:absolute; top:10px; right:20px; cursor:pointer; font-size:24px; color:white;">&times;</span>
-        <h2 style="margin-bottom:20px; color:var(--gold);">How to reach us:</h2>
+        <span onclick="document.getElementById('contact-modal').style.display='none'" style="position:absolute; top:10px; right:20px; cursor:pointer; font-size:24px;">&times;</span>
+        <h2 style="margin-bottom:20px; color:var(--gold);">Free Technical Consult</h2>
         <div style="display:flex; flex-direction:column; gap:15px;">
             <a href="https://wa.me/16478244221" class="btn-main">WhatsApp</a>
-            <a href="https://t.me/your_telegram_handle" class="btn-main">Telegram</a>
-            <a href="https://ig.me/m/glowsaunas.ca" class="btn-main">Instagram DM</a>
             <a href="tel:+16478244221" class="btn-main">Call: 647-824-4221</a>
+            <a href="https://ig.me/m/glowsaunas.ca" class="btn-main">Instagram DM</a>
         </div>
     </div>
 </div>
